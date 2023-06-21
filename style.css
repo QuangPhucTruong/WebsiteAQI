@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: "Comfortaa", serif;
+	font-size: 25px;
+	color: #222;
+	background: url(./image/gg.jpg);
+}
+
+.navbar {
+	background-color: rgba(86, 229, 240, 0.9) !important;
+	height: 70px;
+	opacity: 0.85;
+}
+.navbar li a {
+    color: rgb(31, 101, 230) !important;
+}
+.navbar li a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+.jumbotron {
+	opacity: 0.95;
+	padding: 1rem;
+	border-radius: 2;
+	background-color: rgb(201, 243, 233);
+}
+
+h1{
+	margin: auto;
+	font-size: 20px;
+	font-family: 'Comfortaa', serif;
+	color: #D44000;
+}
+.noise{
+    width: 100px;
+    display: inline-flex;
+	margin: auto;
+}
+
+.noise img{
+    width: 50px;
+    height: 50px; 
+	margin-left: 10px;
+}
+.noisebd{
+	height: 150px;
+	width: 150px;
+	background: rgb(201, 243, 233);
+	margin: auto;
+}
+.noisebd > svg {
+	height: 100%;
+	display: block;
+}
+.noisebd .nnoise{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	font-size: 25px;
+	font-weight: 500;
+}
+.aqi{
+    width: 100px;
+    display: inline-flex;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.aqi img{
+    width: 50px;
+    height: 50px; 
+}
+.aqibd{
+	height: 150px;
+	width: 150px;
+	background: rgb(201, 243, 233);
+	margin: auto;
+}
+.aqibd > svg {
+	height: 100%;
+	display: block;
+	
+}
+.aqibd .naqi{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	font-size: 25px;
+	font-weight: 500;
+}
+.co2{
+    width: 100px;
+    display: inline-flex;
+	text-align: center;
+	margin-left: 10px;
+}
+.rain{
+    width: 100px;
+    display: inline-flex;
+	text-align: center;
+	margin-left: 10px;
+}
+.rain img{
+    width: 50px;
+    height: 50px; 
+}
+.rainbd{
+	height: 150px;
+	width: 150px;
+	background: rgb(201, 243, 233);
+	margin: auto;
+}
+.rainbd > svg {
+	height: 100%;
+	display: block;
+}
+.rainbd .nrain{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	font-size: 25px;
+	font-weight: 500;
+}
+.tem{
+    width: 100px;
+    display: inline-flex;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.tem img{
+    width: 50px;
+    height: 50px; 
+}
+.tembd{
+	height: 150px;
+	width: 150px;
+	background: rgb(201, 243, 233);
+	margin: auto;
+}
+.tembd > svg {
+	height: 100%;
+	display: block;
+}
+.tembd .ntemp{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	font-size: 25px;
+	font-weight: 500;
+}
+.hum{
+    width: 100px;
+    display: inline-flex;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.hum img{
+    width: 50px;
+    height: 50px; 
+}
+.humbd{
+	height: 150px;
+	width: 150px;
+	background: rgb(201, 243, 233);
+	margin: auto;
+}
+.humbd > svg {
+	height: 100%;
+	display: block;
+}
+.humbd .nhumi{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	font-size: 25px;
+	font-weight: 500;
+}
+.uv{
+	margin-left: 10px;
+    width: 100px;
+    display: inline-flex;
+	text-align: center;
+}
+
+.uv img{
+    width: 50px;
+    height: 50px; 
+}
+.uvbd{
+	height: 150px;
+	width: 150px;
+	background: rgb(201, 243, 233);
+	margin: auto;
+}
+.uvbd > svg {
+	height: 100%;
+	display: block;
+}
+.uvbd .nuv{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	font-size: 25px;
+	font-weight: 500;
+}
+.container{
+	padding: 30px;
+}
+.social a {
+	font-size: 2em;/*1em = 16px*/
+	padding: 3rem;/*1rem = 1 "font-size" */
+}
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-instagram {
+	color: #517fa4;
+}
+.fa-youtube {
+	color: #bb0000;
+}
+footer {
+	padding: 10px;
+	background-color: #3ce2da;
+	color: #fafafa;
+	opacity: 0.9;
+}
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+}
+.light-100 {
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+}
+
+.about{
+	padding: 50px;
+	color: #fafafa;
+	opacity: 0.9;
+}

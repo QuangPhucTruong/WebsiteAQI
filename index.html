@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HO CHI MINH CITY</title>
+		<!-- Import Boostrap css, js, font awesome here -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">    
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link href="./style.css" rel="stylesheet">
+		<!-- These are probably out dated so you might want to use newest versions -->
+		<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+		<script src="bd.js"></script>
+
+	</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-branch" href="./index.html">
+				<img src="./image/smart-city.png" height="50">
+				SMART CITY
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html">Ho Chi Minh</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./danang.html">Da Nang</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./hanoi.html">Ha Noi</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+		  <div class="col-md">
+			  <div class="jumbotron">
+				<div class="row">
+					<div class="noise">
+						<h1>
+							NOISE
+						</h1>
+						<img src="image/sound.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="noisebd" id="noisebd">
+						<div class="nnoise" id="nnoise"></div>
+					</div>
+				</div>
+			  </div> 
+		  </div>
+		  <div class="col-md">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="noise">
+						<h1>
+							AQI
+						</h1>
+						<img src="image/wind.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="aqibd" id="aqibd">
+						<div class="naqi" id="naqi"></div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="col-md">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="noise">
+						<h1>
+							RAIN
+						</h1>
+						<img src="image/rain.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="rainbd" id="rainbd">
+						<div class="nrain" id="nrain"></div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-md">
+				<div class="jumbotron">
+					<div class="row">
+						<div class="noise">
+							<h1>
+								TEMP
+							</h1>
+							<img src="image/temperature.png">
+						</div>
+					</div>
+					<div class="row">
+						<div class="tembd" id="tembd">
+							<div class="ntemp" id="ntemp"></div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="col-md">
+			  <div class="jumbotron">
+				<div class="row">
+					<div class="noise">
+						<h1>
+							HUMI
+						</h1>
+						<img src="image/humidity.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="humbd" id="humbd">
+						<div class="nhumi" id="nhumi"></div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md">
+			  <div class="jumbotron">
+				<div class="row">
+					<div class="noise">
+						<h1>
+							UV
+						</h1>
+						<img src="image/ultraviolet.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="uvbd" id="uvbd">
+						<div class="nuv" id="nuv"></div>
+					</div>
+				</div>
+				  
+			  </div>
+			</div>
+		  </div>
+	  </div>
+
+	<footer>
+		<div class="container-fluid padding">	
+			<div class="row text-center padding">
+				<div class="col-12">
+					<h2>Contact</h2>
+				</div>
+				<div class="col-12 social padding">
+					<a href="https://www.facebook.com/profile.php?id=100006989110404"><i class="fab fa-facebook" ></i></a>
+					<a href="https://www.instagram.com/nhathoangbui123/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCSM_hC2jWx32yta7BZ7BGKw"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid padding">	
+			<div class="row text-center">
+				<div class="col">
+					<hr class="light">
+					<p>+84797818548</p>
+					<p>nhathoangbui123@gmail.com</p>
+					<p>HCMUTE</p>
+				</div>
+				<div class="col-12">
+					<hr class="light-100">
+					<h5>&copy; IOT</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
